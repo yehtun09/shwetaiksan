@@ -19,11 +19,11 @@
     ],
     "outputDirectory": "public",
     "env": {
-        "APP_NAME": "Raising Stars",
+        "APP_NAME": "Shwetaiksan",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://raising-stars.vercel.app",
-        "ASSET_URL": "https://raising-stars.vercel.app",
+        "APP_URL": "https://shwetaiksan-v1.vercel.app",
+        "ASSET_URL": "https://shwetaiksan-v1.vercel.app",
 
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
