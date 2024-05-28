@@ -82,12 +82,12 @@
         </a>
     </li>
 
-        <li class="nav-item {{ Request::is('admin/posts*') ? 'active' : '' }}">
+        {{-- <li class="nav-item {{ Request::is('admin/posts*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('admin.posts.index') }}">
                 <i class="icon-paper menu-icon"></i>
                 <span class="menu-title">Posts</span>
             </a>
-        </li>
+        </li> --}}
         <li class="nav-item {{ Request::is('admin/system-calendar*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('admin.systemCalendar') }}">
                 <i class="mdi mdi-calendar menu-icon"></i>

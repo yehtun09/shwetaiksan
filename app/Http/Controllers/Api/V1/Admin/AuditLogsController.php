@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 class AuditLogsController extends Controller
 {
     public function index(){
-        abort_if(Gate::denies("audit_logs_access"), Response::HTTP_FORBIDDEN,"403 Forbidden");
+        // abort_if(Gate::denies("audit_logs_access"), Response::HTTP_FORBIDDEN,"403 Forbidden");
         $auditlogs=AuditLog::all();
         return  response()->json([
             "data" => $auditlogs,
