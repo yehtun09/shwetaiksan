@@ -21,39 +21,6 @@
         </div>
     </div>
 </div>
-<!-- partial -->
-{{-- <nav class="sidebar sidebar-offcanvas" id="sidebar">
-    <ul class="nav">
-        <li class="nav-item ">
-            <a class="nav-link" href="{{ route('home') }}">
-                <i class="icon-grid menu-icon"></i>
-                <span class="menu-title">Dashboard</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="icon-layout menu-icon"></i>
-                <span class="menu-title">User Management</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu  {{ request()->is('admin/permissions*') ? 'active open' : '' }} {{ request()->is('admin/roles*') ? 'active open' : '' }} {{ request()->is('admin/users*') ? 'active open' : '' }}">
-                    <li class="nav-item  {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.permissions.index') }}">Permissions</a></li>
-                    <li class="nav-item  {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}"> <a class="nav-link" href="{{ route('admin.roles.index') }}">Roles</a></li>
-                    <li class="nav-item  {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}"> <a class="nav-link" href="{{ route('admin.users.index') }}">Users</a></li>
-                </ul>
-            </div>
-            
-        </li>
-       
-        <li class="nav-item {{ request()->is('admin/posts*') && !request()->is('admin/users*') ? 'active open' : '' }} ">
-            <a class="nav-link" href="{{ route('admin.posts.index') }}">
-                <i class="icon-paper menu-icon"></i>
-                <span class="menu-title">Posts</span>
-            </a>
-        </li>
-    </ul>
-</nav> --}}
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
@@ -102,6 +69,18 @@
 </li>
     @endcan
         
+    <li class="nav-item {{ Request::is('admin/total_balances*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.total_balances.index') }}">
+            <i class="icon-paper menu-icon"></i>
+            <span class="menu-title">Total Balances</span>
+        </a>
+    </li>
+    <li class="nav-item {{ Request::is('admin/admin_bank_accounts*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.admin_bank_accounts.index') }}">
+            <i class="icon-paper menu-icon"></i>
+            <span class="menu-title">Admin Bank  Account</span>
+        </a>
+    </li>
 
         <li class="nav-item {{ Request::is('admin/posts*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('admin.posts.index') }}">

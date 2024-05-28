@@ -94,4 +94,30 @@ return [
             'confirm_password' => 'Re-type Password',
         ],
     ],
+    'total_balance' => [
+        'title' => 'Total Balances',
+        'title_singular' => 'Total Balance',
+        'fields' => [
+            'id' => 'ID',
+            'user_id' => 'User ID',
+            'total_balance' => 'Total Balance',
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
+            'deleted_at' => 'Deleted At',
+        ],
+    ],
+    'admin_bank_account' => [
+        'title' => 'Admin Bank Accounts',
+        'title_singular' => 'Admin Bank Account',
+        'fields' => [
+            'id' => 'ID',
+            'bank_type' => 'Bank Type',
+            'account_no' => 'Account Number',
+            'account_name' => 'Account Name',
+            'y_tube_link' => 'YouTube Link',
+            'created_at' => 'Created At',
+            'updated_at' => 'Updated At',
+        ],
+    ],
+    
 ];

@@ -92,7 +92,47 @@ class PermissionTableSeeder extends Seeder
             [
                 'id'    => 19,
                 'title' =>'audit_logs_delete'
-            ]
+            ],
+            [
+                'id'    => 20,
+                'title' => 'total_balance_create',
+            ],
+            [
+                'id'    => 21,
+                'title' => 'total_balance_edit',
+            ],
+            [
+                'id'    => 22,
+                'title' => 'total_balance_show',
+            ],
+            [
+                'id'    => 23,
+                'title' => 'total_balance_delete',
+            ],
+            [
+                'id'    => 24,
+                'title' => 'total_balance_access',
+            ],
+            [
+                'id'    => 25,
+                'title' => 'admin_bank_account_create',
+            ],
+            [
+                'id'    => 26,
+                'title' => 'admin_bank_account_edit',
+            ],
+            [
+                'id'    => 27,
+                'title' => 'admin_bank_account_show',
+            ],
+            [
+                'id'    => 28,
+                'title' => 'admin_bank_account_delete',
+            ],
+            [
+                'id'    => 29,
+                'title' => 'admin_bank_account_access',
+            ],
         ];
 
         Permission::insert($permissions);
