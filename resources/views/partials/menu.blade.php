@@ -77,8 +77,8 @@
     </li>
     <li class="nav-item {{ Request::is('admin/admin_bank_accounts*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('admin.admin_bank_accounts.index') }}">
-            <i class="icon-paper menu-icon"></i>
-            <span class="menu-title">Admin Bank  Account</span>
+            <i class="icon-paper mdi mdi-bank pr-3"></i>
+            <span class="menu-title">  Admin Bank  Account</span>
         </a>
     </li>
 

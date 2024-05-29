@@ -22,9 +22,9 @@
       <div class="content-wrapper d-flex align-items-center auth px-0">
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
-            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div class="brand-logo">
-                <img src="{{ asset('dashboard/images/logo.svg')}}" alt="logo">
+            <div class="auth-form-light text-left  px-4 px-sm-5">
+              <div class="" style="margin-left: 100px">
+                <img src="{{ asset('image/launcher.png')}}" alt="logo" style="width: 60%">
               </div>
                 @yield('content')
             </div>
